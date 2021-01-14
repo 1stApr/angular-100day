@@ -1,4 +1,7 @@
 <hello2 name200="{{ name1 }}"></hello2>
 <p>
-  Start editing to see some magic happen :)
+	Start editing to see some magic happen :)
 </p>
+<button (click)="isDanger = !isDanger">Danger</button>
+<button (click)="isWarning = !isWarning">Warning</button>
+<div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div>
