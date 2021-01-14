@@ -2,3 +2,22 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+<ul>
+  <ng-container *ngIf="user.length >0;else noUser">
+    <li
+      *ngFor="let u of user; index as idx; count as total; first as isFirst; last as isLast; even as isEven; odd as isOdd"
+    >
+      <span>{{u.name}} - {{u.id}} - {{u.phone}}</span>
+      <br />
+      <span>At Index {{idx}} Out Of {{total}}</span>
+
+      <span *ngIf="isEven;else isOddNumber"> Even Number</span>
+    </li>
+  </ng-container>
+  <ng-template #isOddNumber>
+    <span> Odd Number</span>
+  </ng-template>
+  <ng-template #noUser>
+    No User
+  </ng-template>
+</ul>
