@@ -1,9 +1,9 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: "hello",
+  selector: "hello2",
   template: `
-    <h1>Hello {{ name }}!</h1>
+    <h1>Hello {{ name200 }}!</h1>
   `,
   styles: [
     `
@@ -14,12 +14,5 @@ import { Component, Input } from "@angular/core";
   ]
 })
 export class HelloComponent {
-  @Input() name: string;
-
-  ngOnInit() {
-    console.log("Hello Init");
-  }
-  ngOnDestroy() {
-    console.log("Hello Destroy");
-  }
+  @Input() name200: string;
 }
