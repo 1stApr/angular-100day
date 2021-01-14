@@ -14,6 +14,7 @@ export class AppComponent {
     age: 22
   };
 
+
   handlerClick() {
     console.log("Clicked!", event);
   }
