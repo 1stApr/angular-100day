@@ -1,0 +1,5 @@
+<hello *ngIf="user.age >= 10" [name]="user.name"></hello>
+<div *ngIf="user.age < 18">You are too young</div>
+<button (click)="user.age = user.age-1">-</button>
+Age: {{user.age}}
+<button (click)="user.age = user.age+1">+</button>
