@@ -1,4 +1,7 @@
 <hello2 name200="{{ name1 }}"></hello2>
 <p>
-  Start editing to see some magic happen :)
+	Start editing to see some magic happen :)
 </p>
+<input type="text"[(ngModel)] ="name1" (ngModelChange) = "name1=$event">
+<br><br>
+<toggle [(checked)]="isChecked"></toggle>
