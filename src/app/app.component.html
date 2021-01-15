@@ -2,6 +2,9 @@
 <p>
 	Start editing to see some magic happen :)
 </p>
-<input type="text"[(ngModel)] ="name1" (ngModelChange) = "name1=$event">
-<br><br>
-<toggle [(checked)]="isChecked"></toggle>
+<input #nameInput type="text"[(ngModel)] ="name1" (ngModelChange) = "name1=$event">
+<button (click) = "showLast = !showLast">Toggle Show Last</button>
+<button #toggleButton (click)="toggleComp.toggle()">Toggle Me</button>
+<toggle #toggleComp [(checked)]="isChecked"></toggle>
+<toggle #toggleComp [(checked)]="isChecked"></toggle>
+<ng-container *ngIf="showLast"><toggle [(checked)] = "isChecked"></toggle></ng-container>
