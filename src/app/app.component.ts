@@ -7,5 +7,8 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   name1 = "AngularTest " + VERSION.major;
-  isChecked = true;
+  questions = {
+    question1: true,
+    question2: false
+  };
 }
