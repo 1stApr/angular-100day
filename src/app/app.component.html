@@ -1,6 +1,6 @@
 <hello2 name200="{{ name1 }}"></hello2>
 <input type="text"[(ngModel)] ="name1" (ngModelChange) = "name1=$event">
 <br><br>
-<toggle [(checked)]="questions.question1"></toggle>
-<br>
-<toggle [(checked)]="questions.question2"></toggle>
+<app-toggle [(checked)]="questions.question1" header="Header 1" question="question 1" content="content 1"></app-toggle>
+<br><br>
+<app-toggle [(checked)]="questions.question2" header="Header 2" question="question 2" content="content 2"></app-toggle>
