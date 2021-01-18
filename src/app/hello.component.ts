@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "hello",
   template: `
-    <h1>Hello {{ name }}!</h1>
+    <h1>Angular {{ name }}!</h1>
   `,
   styles: [
     `
@@ -14,7 +14,7 @@ import { Component, Input } from "@angular/core";
   ]
 })
 export class HelloComponent {
-  @Input() name: string;
+  @Input() name: number;
 
   ngOnInit() {
     console.log("Hello Init");

@@ -7,10 +7,11 @@ import { Component, VERSION } from "@angular/core";
 export class AppComponent {
   title = "AngularTest " + VERSION.major;
   nameVersion = "Angular " + VERSION.major;
+  counter = 1;
   show = false;
 
   user = {
-    name: "Sinon",
+    name: 11,
     age: 22
   };
 
