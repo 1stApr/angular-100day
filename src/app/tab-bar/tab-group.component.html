@@ -1,9 +1,7 @@
 <div class="tab-headers">
-	<div class="tab-header-item" 
-    *ngFor="let tab of tabPanelList;let idx =index"[class.active]="idx ===activeIndex"
-    (click)="activeIndexChange.emit(idx)">
+	<div class="tab-header-item" *ngFor="let tab of tabPanelList;let idx =index" [class.active]="idx ===activeIndex"
+		(click)="activeIndexChange.emit(idx)">
 		{{tab.title}}
-		<button (click) = "removeTab(tab)">X</button>
 	</div>
 </div>
 

@@ -12,8 +12,4 @@ import { TabGroupComponent } from "./tab-group.component";
     }
   ]
 })
-export class TabBarComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class TabBarComponent extends TabGroupComponent {}

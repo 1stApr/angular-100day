@@ -30,18 +30,4 @@ export class TabGroupComponent{
   addTab(tab: TabPanelComponent){
     this.tabPanelList = [...this.tabPanelList,tab]
   }
-  removeTab(tab: TabPanelComponent){
-    let found = -1;
-    this.tabPanelList = this.tabPanelList.filter((tp,index)=>{
-      if(tp === tab){
-        found = index;
-        return false;
-      }
-      return true;
-    });
-    if(found === this.activeIndex){
-      this.activeIndexChange.emit(found === this.tabPanelList.length ? found = 1:found);
-    }
-  }
-
 }
