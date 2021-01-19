@@ -9,13 +9,12 @@ export class AppComponent {
   nameVersion = "Angular " + VERSION.major;
   counter = 1;
   show = false;
-  navs = ['Active','Link 1','Linh 2'];
+  navs = ["Active", "Link 1", "Link 2"];
 
   user = {
     name: 11,
     age: 22
   };
-
 
   handlerClick() {
     console.log("Clicked!", event);

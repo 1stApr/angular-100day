@@ -28,8 +28,10 @@
 	<span class="badge badge-primary">{{ counter }}</span> items
 </ng-template>
 
-<ul class="nav nav-tabs mx-4 my-4">
-	<li class="nav-item" *ngFor="let item of navs">
-		<a class="nav-link active" href="#">{{item}}</a>
-	</li>
-</ul>
+<!-- <tabs [navs] = "navs"></tabs> -->
+
+<ng-template #linkTemplate let-l="item">
+	<h5>{{l}}</h5>
+</ng-template>
+
+<tabs [navs]="navs" [linkTemplate]="linkTemplate"></tabs>

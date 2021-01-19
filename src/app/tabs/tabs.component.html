@@ -1,1 +1,12 @@
-<p>tabs works!</p>
+<ul class="nav nav-tabs mx-4 my-4">
+	<li class="nav-item" *ngFor="let item of navs">
+		<a class="nav-link active" href="#">
+      <ng-container *ngIf="linkTemplate;else noTemplate">
+        <ng-template [ngTemplateOutlet]="linkTemplate" [ngTemplateOutletContext]="{item:item}"></ng-template>
+      </ng-container>
+      <ng-template #noTemplate>
+        {{item}}
+      </ng-template>
+    </a>
+	</li>
+</ul>
