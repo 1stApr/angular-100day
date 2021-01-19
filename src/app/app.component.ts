@@ -9,6 +9,7 @@ export class AppComponent {
   nameVersion = "Angular " + VERSION.major;
   counter = 1;
   show = false;
+  navs = ['Active','Link 1','Linh 2'];
 
   user = {
     name: 11,
