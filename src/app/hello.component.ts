@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "hello2",
   template: `
-    <h1>Hello {{ name200 }}!</h1>
+    <h1>{{ name200 }}!</h1>
   `,
   styles: [
     `
