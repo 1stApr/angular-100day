@@ -1,11 +1,12 @@
-<div class="tab-headers">
-	<div class="tab-header-item" *ngFor="let tab of tabPanelList;let idx =index" [class.active]="idx ===activeIndex"
-		(click)="activeIndexChange.emit(idx)">
-		{{tab.title}}
-	</div>
-</div>
+<ul class="nav nav-tabs">
+	<li class="nav-item" *ngFor="let tab of tabPanelList; let idx = index">
+		<a class="nav-link" [class.active]="idx === activeIndex" (click)="activeIndexChange.emit(idx)">
+			{{ tab.title }}
 
-<div class="tab-body" *ngIf="tabPanelList.length;else noTabs">
+		</a>
+	</li>
+</ul>
+<div class="tab-body" *ngIf="tabPanelList.length; else noTabs">
 	<ng-container *ngTemplateOutlet="tabPanelList[activeIndex].panelBody"></ng-container>
 </div>
 <ng-template #noTabs>

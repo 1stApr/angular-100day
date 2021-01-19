@@ -7,7 +7,7 @@ import { BarChartComponent } from "./bar-chart/bar-chart.component";
 import { StackBarChartComponent } from "./stack-bar-chart/stack-bar-chart.component";
 import { PieChartComponent } from "./pie-chart/pie-chart.component";
 import { LineChartComponent } from "./line-chart/line-chart.component";
-import { TabBarComponent } from "./tab-bar/tab-bar.component";
+
 import { TabPanelComponent } from "./tab-bar/tab-panel.component";
 import { TabGroupComponent } from "./tab-bar/tab-group.component";
 
@@ -20,7 +20,7 @@ import { TabGroupComponent } from "./tab-bar/tab-group.component";
     StackBarChartComponent,
     PieChartComponent,
     LineChartComponent,
-    TabBarComponent,
+
     TabPanelComponent,
     TabGroupComponent
   ],
